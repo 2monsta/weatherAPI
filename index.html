@@ -15,47 +15,73 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form action="" id="weather-form">
-		<label for="zip-code">Please enter a zip code to search for</label>
-		<input type="number" id="zip-code" placeholder="30324">
-		<button class="btn btn-success">Submit</button>
-	</form>
-	<div class="col-sm-12" id="temp-info">
-		<!-- jquery dont fail us now -->
-	</div>
-	<table class="table col-sm-8 table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>City</th>
-				<th>Temp_High</th>
-				<th>Temp_Low</th>
-				<th id="save-data">Save Change?</th>
-			</tr>
-		</thead>
-		<tbody class="data">
-			<tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-			</tr>
-		</tbody>
-	</table>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="text-center header">
+					<h1>Your Cities Weather by Zip Code</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<form action="" id="weather-form">
+				<div class="col-sm-12 text-center">
+					<h3>Enter Your Zip!</h3>
+				</div>
+				<div class="col-sm-6 text-center">
+					<input type="number" class="form-control" id="zip-code" placeholder="Please Enter Zip Code">
+				</div>
+				<div class="col-sm-6">
+					<button class="btn btn-success btn-block">Submit</button>
+				</div>
+			</form>
 
-	<table class="table col-sm-8 table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>City</th>
-				<th>Temp_High</th>
-				<th>Temp_Low</th>
-			</tr>
-		</thead>
-		<tbody class="data-saved">
-			<tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-			</tr>
-		</tbody>
-	</table>
+			<div class="col-sm-12" id="temp-info">
+				<!-- jquery dont fail us now -->
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<table class="table col-sm-8 table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>City's Current Temp</th>
+								<th>Temp_High</th>
+								<th>Temp_Low</th>
+								<th id="save-data">Save Change?</th>
+							</tr>
+						</thead>
+						<tbody class="data">
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h3>Your Saved Weather</h3>
+			</div>
+			<table class="table col-sm-8 table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>City's Current Temp</th>
+						<th>Temp_High</th>
+						<th>Temp_Low</th>
+					</tr>
+				</thead>
+				<tbody class="data-saved">
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
 </body>
 </html>

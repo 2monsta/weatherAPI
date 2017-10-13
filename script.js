@@ -1,5 +1,6 @@
 $(document).ready(()=>{
 	var citiesWeather = [];
+	updateRow();
 	$("#save-data").hide();
 	$("#weather-form").submit((event)=>{
 		$("#save-data").show();
